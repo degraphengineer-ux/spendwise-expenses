@@ -14,7 +14,7 @@ for (const file of ['index.html', 'script.js', 'style.css']) {
   copy(file, file);
 }
 
-for (const file of ['assets/hugeicons.svg', 'assets/spendwise-logo.png']) {
+for (const file of ['assets/hugeicons.svg', 'assets/spendwise-logo.png', 'assets/favicon.png']) {
   copy(file, file);
 }
 
