@@ -4,9 +4,17 @@ const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
 const crypto = require('node:crypto');
-const { createApp, loadEnvFile } = require('./server');
+const serverModule = require('./server');
+const { createApp, loadEnvFile } = serverModule;
 
 const TEST_MFA_KEY = 'spendwise-test-key-that-is-at-least-32-characters';
+
+test('Vercel entry points export a callable request handler and retain server helpers', () => {
+  assert.equal(typeof serverModule, 'function');
+  assert.equal(serverModule.createApp, createApp);
+  assert.equal(serverModule.loadEnvFile, loadEnvFile);
+  assert.equal(require('./index'), serverModule);
+});
 
 function testTotp(secret, time = Date.now()) {
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';

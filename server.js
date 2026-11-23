@@ -1984,4 +1984,13 @@ if (require.main === module) {
   });
 }
 
-module.exports = { createApp, loadEnvFile };
+let vercelApp;
+function vercelHandler(request, response, next) {
+  vercelApp ||= createApp();
+  return vercelApp(request, response, next);
+}
+
+vercelHandler.createApp = createApp;
+vercelHandler.loadEnvFile = loadEnvFile;
+
+module.exports = vercelHandler;
