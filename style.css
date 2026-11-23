@@ -643,7 +643,9 @@ a {
   color: var(--text-dark);
   font: 700 12px/1 var(--font-body);
   cursor: pointer;
-  transition: background-color 160ms ease, transform 160ms ease;
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease;
 }
 
 .mobile-nav-add {
@@ -1730,7 +1732,9 @@ button:disabled {
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
-  transition: border-color 160ms ease, background-color 160ms ease;
+  transition:
+    border-color 160ms ease,
+    background-color 160ms ease;
 }
 
 .date-shortcut:hover {
@@ -1936,7 +1940,9 @@ button:disabled {
   color: inherit;
   text-align: left;
   cursor: pointer;
-  transition: background-color 150ms ease, color 150ms ease;
+  transition:
+    background-color 150ms ease,
+    color 150ms ease;
   font-size: 9px;
 }
 
@@ -3291,7 +3297,9 @@ button:focus-visible,
       0 0 0 4px #191817,
       0 0 16px rgba(223, 143, 189, 0.45);
     cursor: pointer;
-    transition: transform 160ms ease, box-shadow 160ms ease;
+    transition:
+      transform 160ms ease,
+      box-shadow 160ms ease;
   }
 
   .mobile-nav-add:hover,
@@ -3940,7 +3948,11 @@ button:focus-visible,
   min-height: 100vh;
   padding: clamp(24px, 5vw, 72px);
   background:
-    radial-gradient(ellipse at 18% 12%, rgba(116, 144, 196, 0.1), transparent 34%),
+    radial-gradient(
+      ellipse at 18% 12%,
+      rgba(116, 144, 196, 0.1),
+      transparent 34%
+    ),
     #1e1f20;
 }
 
@@ -3961,7 +3973,11 @@ button:focus-visible,
   border: 0;
   border-radius: 0;
   background:
-    radial-gradient(ellipse at 12% 100%, rgba(139, 165, 219, 0.14), transparent 45%),
+    radial-gradient(
+      ellipse at 12% 100%,
+      rgba(139, 165, 219, 0.14),
+      transparent 45%
+    ),
     #0c0d0e;
   color: #f5f6f8;
 }
@@ -4403,7 +4419,9 @@ button:focus-visible,
   background: var(--color-text-primary);
   color: var(--color-secondary);
   font-size: 12px;
-  transition: background-color 160ms ease, color 160ms ease;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
 }
 
 .goal-remove:hover,
@@ -4616,7 +4634,9 @@ select:focus-visible,
   color: #d3d5cf;
   font-size: 14px;
   font-weight: 600;
-  transition: background-color 160ms ease, color 160ms ease;
+  transition:
+    background-color 160ms ease,
+    color 160ms ease;
 }
 
 .sidebar nav a:hover {
@@ -6414,7 +6434,9 @@ select:focus {
   text-align: right;
 }
 
-.analytics-budget-track.is-over-budget + .analytics-budget-foot > span:last-child {
+.analytics-budget-track.is-over-budget
+  + .analytics-budget-foot
+  > span:last-child {
   color: var(--color-danger);
 }
 
@@ -6568,7 +6590,10 @@ select:focus {
   color: #fff;
 }
 
-#planning .planning-summary-card--primary .planning-summary-heading > span:first-child,
+#planning
+  .planning-summary-card--primary
+  .planning-summary-heading
+  > span:first-child,
 #planning .planning-summary-card--primary > small {
   color: #c3c8bd;
 }
@@ -7235,7 +7260,9 @@ select:focus {
     background: transparent;
     color: #4a4c46;
     text-decoration: none;
-    transition: color 180ms ease, transform 180ms ease;
+    transition:
+      color 180ms ease,
+      transform 180ms ease;
   }
 
   .sidebar nav a:hover {
@@ -7320,7 +7347,6 @@ select:focus {
     transition: none !important;
     animation: none !important;
   }
-
 }
 
 @keyframes mobile-nav-enter {
@@ -7353,8 +7379,8 @@ select:focus {
 }
 
 .brand-mark img {
-  width: 36px;
-  height: 36px;
+  width: 28px;
+  height: 28px;
   object-fit: contain;
 }
 
@@ -8255,7 +8281,9 @@ select:focus {
   padding: 0 12px;
   font: 650 10px var(--font-body);
   cursor: pointer;
-  transition: background-color 150ms ease, border-color 150ms ease;
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease;
 }
 
 .expense-filter-button:hover {
@@ -8603,7 +8631,12 @@ select:focus {
   width: 210px;
   height: 118px;
   border-radius: 120px 120px 0 0;
-  background: radial-gradient(circle at 54% 60%, rgba(131, 175, 59, 0.18), rgba(215, 254, 3, 0.1) 54%, transparent 72%);
+  background: radial-gradient(
+    circle at 54% 60%,
+    rgba(131, 175, 59, 0.18),
+    rgba(215, 254, 3, 0.1) 54%,
+    transparent 72%
+  );
   content: "";
   pointer-events: none;
 }
@@ -8773,7 +8806,10 @@ select:focus {
   place-self: center;
   place-items: center;
   border-radius: 50%;
-  background: conic-gradient(var(--color-primary) 0 var(--planning-budget-progress, 0%), #eceef0 var(--planning-budget-progress, 0%) 100%);
+  background: conic-gradient(
+    var(--color-primary) 0 var(--planning-budget-progress, 0%),
+    #eceef0 var(--planning-budget-progress, 0%) 100%
+  );
   transform: rotate(-90deg);
 }
 
