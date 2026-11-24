@@ -1,6 +1,6 @@
 {
   "name": "spendwise-dashboard",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Full-stack expense tracker dashboard",
   "main": "server.js",
   "scripts": {
